@@ -20,8 +20,9 @@
     "watchify": "*",
     "reactify": "*",
     "browserify": "*",
-    "jest-cli": "^0.4.0"
+    "jest-cli": "*"
   },
+
   "scripts": {
     "test": "jest"
   }

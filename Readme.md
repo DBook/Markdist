@@ -1,6 +1,7 @@
-# The namehere decision making tool
+# The -namehere- decision making tool
 
-You can use this tool to create pro and con lists with just a few clicks
+You can use this tool to create pro and con lists with just a few clicks. This is basically just a demo
+how to use reactjs and various different libraries. Styling wasn't really a priority, just used Bootstrap.
 
 Running and developing it is really simple
 
@@ -8,7 +9,9 @@ Running and developing it is really simple
 
     npm install
 
-    gulp (will start the watch task)
+    gulp #(will start the watch task)
+
+    gulp build #(will create all the dist files)
 
 
 And that is it you can start working on the files and they should be updated directly
@@ -19,3 +22,6 @@ Features to come:
 - Markdown support for the items
 - Undo for deleted items
 - Better styles
+
+
+[![Build Status](https://travis-ci.org/DBook/Markdist.svg?branch=master)](https://travis-ci.org/DBook/Markdist)
