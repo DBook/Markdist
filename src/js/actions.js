@@ -12,7 +12,7 @@ module.exports = {
         for(var k in intl) keys.push(k);
 
         if (keys.indexOf(lang) != -1 ){
-            var cursorLang = stateTree.select('language')
+            var cursorLang = stateTree.select('language');
             cursorLang.edit(lang)
         }else{
             throw "Lang not found";
@@ -50,7 +50,7 @@ module.exports = {
         var item = curserActive.get();
 
         if(item){
-            item.title = newValue
+            item.title = newValue;
 
             curserActive.edit(item);
 
@@ -76,7 +76,7 @@ module.exports = {
         var item = curserActive.get();
 
         if (item){
-            item.level = newLevel
+            item.level = newLevel;
 
             curserActive.edit(item);
 
@@ -109,7 +109,7 @@ module.exports = {
         var item = curserActive.get();
 
         if (item){
-            curserActive.remove()
+            curserActive.remove();
 
             stateTree.commit();
         }else{
@@ -128,7 +128,7 @@ module.exports = {
 
         var alertCursor = stateTree.select('alerts');
 
-        var newAlert = {id: this.getNewId(), title:title, text:text, duration:parseInt(duration), style:style}
+        var newAlert = {id: this.getNewId(), title:title, text:text, duration:parseInt(duration), style:style};
 
         alertCursor.push(newAlert);
 
@@ -143,7 +143,7 @@ module.exports = {
         var item = alertCursor.get();
 
         if (item){
-            alertCursor.remove()
+            alertCursor.remove();
 
             stateTree.commit();
         }else{

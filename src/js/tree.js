@@ -34,6 +34,39 @@ var stateTree = new Baobab({
 
     alerts: []
 
-});
+},{
+    validate: {
+        language: 'string',
+        documents: [{
+            "id": "number",
+            "title": "string",
+            "text": "string",
+            "active": "boolean",
+            "pros": [
+                {
+                    "title": "string",
+                    id: "number",
+                    level: "string"
+                },
+            ],
+            "cons": [
+                {
+                    "title": "string",
+                    id: "number",
+                    level: "string"
+                },
+            ]
+
+        }],
+        alerts : [{
+            id: "number",
+            title: "string",
+            text: "string",
+            duration: "number",
+            style: "string"
+        }]
+    }
+    }
+);
 
 module.exports = stateTree;
