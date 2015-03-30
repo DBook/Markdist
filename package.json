@@ -1,0 +1,28 @@
+{
+  "name": "Markdist",
+  "description": "Something I play around with",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "baobab": "*",
+    "react": "*",
+    "react-bootstrap": "*",
+    "react-intl": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-react": "*",
+    "gulp-uglify": "*",
+    "gulp-html-replace": "*",
+    "gulp-streamify": "*",
+    "vinyl-source-stream": "*",
+    "watchify": "*",
+    "reactify": "*",
+    "browserify": "*",
+    "jest-cli": "^0.4.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
